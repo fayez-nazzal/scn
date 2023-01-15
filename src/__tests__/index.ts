@@ -1,4 +1,4 @@
-import { scn } from '..';
+import scn from '..';
 
 describe('scn', () => {
   it('returns the same - single string', () => {

@@ -6,6 +6,7 @@
   "files": [
     "lib/**/*"
   ],
+  "types": "./lib/index.d.ts",
   "scripts": {
     "build": "tsc && google-closure-compiler --js=lib/index.js --js_output_file=lib/index.min.js && mv lib/index.min.js lib/index.js",
     "test": "jest --config jestconfig.json"
