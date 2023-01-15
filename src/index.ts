@@ -2,9 +2,9 @@
  * # Simple classnames
  * ## Example
  * ### Input:
- * scn("text-sm", ["text-red", !!error], ["text-green", !error])
+ * scn("text-sm", ["text-error", isError], ["text-success", !isError])
  * ### Output:
- * "text-sm text-red text-green"
+ * "text-sm text-success"
  */
 const scn = (...cn: ([string, boolean] | string)[]) =>
   cn
