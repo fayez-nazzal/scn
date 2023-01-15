@@ -3,13 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc && google-closure-compiler --js=lib/index.js --js_output_file=lib/index.min.js && mv lib/index.min.js lib/index.js",
+    "test": "jest --config jestconfig.json"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^29.2.5",
+    "google-closure-compiler": "^20230103.0.0",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.5",
     "typescript": "^4.9.4"
   }
 }

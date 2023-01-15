@@ -1,1 +1,1 @@
-Simple classnames utility
+Simple classnames utility ready to use
