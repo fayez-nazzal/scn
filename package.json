@@ -1,12 +1,13 @@
 {
   "name": "scn",
   "version": "1.0.4",
-  "description": "",
-  "main": "index.js",
+  "description": "Simple classnames utility that is tiny and fast",
+  "main": "lib/index.js",
   "files": [
     "lib/**/*"
   ],
-  "types": "./lib/index.d.ts",
+  "types": "lib/index.d.ts",
+
   "scripts": {
     "build": "tsc && google-closure-compiler --js=lib/index.js --js_output_file=lib/index.min.js && mv lib/index.min.js lib/index.js",
     "test": "jest --config jestconfig.json"

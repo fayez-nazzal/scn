@@ -1,6 +1,6 @@
 # scn
 
-A Simple classnames utility function (103 bytes)
+Simple classnames utility that is tiny and fast (103 bytes)
 
 # Examples
 ```js
