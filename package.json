@@ -1,6 +1,6 @@
 {
   "name": "scn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "files": [
@@ -10,8 +10,14 @@
     "build": "tsc && google-closure-compiler --js=lib/index.js --js_output_file=lib/index.min.js && mv lib/index.min.js lib/index.js",
     "test": "jest --config jestconfig.json"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "classes",
+    "classname",
+    "classnames",
+    "simple classes",
+    "simple classnames"
+  ],
+  "author": "Fayez Nazzal",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.2.5",
