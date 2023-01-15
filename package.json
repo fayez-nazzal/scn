@@ -1,6 +1,6 @@
 {
   "name": "scn",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Simple classnames utility that is tiny and fast",
   "main": "lib/index.js",
   "files": [
