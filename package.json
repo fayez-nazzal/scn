@@ -1,7 +1,7 @@
 {
   "name": "scn",
   "version": "1.0.8",
-  "description": "Simple classnames utility that is tiny and fast",
+  "description": "Simple classnames utility function that is tiny and fast (103 bytes)",
   "main": "lib/index.js",
   "files": [
     "lib/**/*"
@@ -20,6 +20,8 @@
   ],
   "author": "Fayez Nazzal",
   "license": "MIT",
+  "repository": "https://github.com/fayez-nazzal/scn",
+  "bugs": "https://github.com/fayez-nazzal/scn/issues",
   "devDependencies": {
     "@types/jest": "^29.2.5",
     "google-closure-compiler": "^20230103.0.0",
