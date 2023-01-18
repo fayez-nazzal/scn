@@ -1,12 +1,30 @@
 # scn
 
-Simple classnames utility that is tiny and fast (75 bytes)
+Simple class names utility that is tiny and fast (75 bytes).
 
 ## Choose between 2 styles
 
 ### Style 1
-- Use strings for usual class names
-- Use tuples for conditional styles, if the second value is falsy, the class name wont be included.
+- Use strings for normal class names.
+- Add logical operators for conditional classes.
+
+#### Example
+
+```js
+scn('hello', false && 'world'); // 'hello'
+```
+#### Real world example
+```js
+scn(
+  'text-sm leading-4',
+  isError && 'text-error bg-error-opacity',
+  !isError && 'text-success bg-success-opacity'
+); // 'text-sm leading-4 text-success bg-success-opacity'
+```
+
+### Style 2
+- Use strings for normal class names.
+- Use tuples for conditional styles, if the second value is falsy, the class name will not be included.
 
 #### Examples
 
@@ -32,24 +50,6 @@ scn(
   'text-sm leading-4',
   ['text-error bg-error-opacity', isError],
   ['text-success bg-success-opacity', !isError]
-); // 'text-sm leading-4 text-success bg-success-opacity'
-```
-
-### Style 2
-- Use strings for usual class names
-- Add logical operators for conditional classes
-
-#### Example
-
-```js
-scn('hello', false && 'world'); // 'hello'
-```
-#### Real world example
-```js
-scn(
-  'text-sm leading-4',
-  isError && 'text-error bg-error-opacity',
-  !isError && 'text-success bg-success-opacity'
 ); // 'text-sm leading-4 text-success bg-success-opacity'
 ```
 
