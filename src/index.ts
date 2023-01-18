@@ -6,10 +6,8 @@
  * ### Output:
  * "text-sm text-success"
  */
-const scn = (...cn: ([string, boolean] | string)[]) =>
+export = (...cn: ([string, boolean | null | undefined] | string)[]) =>
   cn
-    .filter((x) => x[1] != false)
+    .filter((x) => x[1] ?? false)
     .map((x) => (typeof x == 'string' ? x : x[0]))
     .join(' ');
-
-export = scn;
