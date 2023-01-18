@@ -63,8 +63,8 @@ describe('scn', () => {
     expect(scn('hello', undefined, null, false, ['world', true], ['!', false], ['?', undefined], ['!', null])).toBe('hello world');
   });
 
-  it("sending with empty string doesn't remove the classname", () => {
-    expect(scn('hello', ['world', ''])).toBe('hello world');
+  it("sending with empty string remove the classname", () => {
+    expect(scn('hello', ['world', ''])).toBe('hello');
   });
 
   it("sending empty object doesn't remove the classname", () => {
@@ -73,5 +73,9 @@ describe('scn', () => {
 
   it("sending empty array doesn't remove the classname", () => {
     expect(scn('hello', ['world', []])).toBe('hello world');
+  });
+
+  it("USe conditional operators", () => {
+    expect(scn('hello', false && 'world')).toBe('hello');
   });
 });
