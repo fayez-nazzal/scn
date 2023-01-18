@@ -37,6 +37,21 @@ scn(
 ); // 'text-sm leading-4 text-success bg-success-opacity'
 ```
 
+### Example I love to mention
+```ts
+interface IPropTypes {
+  className?: string;
+}
+
+const Component = ({ className }: IPropTypes) => (
+  <div className={scn("hello", className)} />
+);
+
+<Component className="world" /> // <div class="hello world" />
+
+<Component /> // <div class="hello" />  -- No "undefined" class 🎉
+```
+
 ## License
 
 MIT
