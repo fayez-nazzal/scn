@@ -51,15 +51,15 @@ describe('scn', () => {
     ).toBe('text-sm leading-4 text-success bg-success-opacity');
   });
 
-  it("testing undefined", () => {
+  it('testing undefined', () => {
     expect(scn(['hello', undefined])).toBe('');
   });
 
-  it("testing null", () => {
+  it('testing null', () => {
     expect(scn(['hello', null])).toBe('');
   });
 
-  it("testing string, array, undefined and null", () => {
+  it('testing string, array, undefined and null', () => {
     expect(scn('hello', ['world', true], ['!', false], ['?', undefined], ['!', null])).toBe('hello world');
   });
 });
