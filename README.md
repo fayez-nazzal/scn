@@ -1,8 +1,14 @@
 # scn
 
-Simple classnames utility that is tiny and fast (87 bytes)
+Simple classnames utility that is tiny and fast (75 bytes)
 
-## Examples
+## Choose between 2 styles
+
+### Style 1
+- Use strings for usual class names
+- Use tuples for conditional styles, if the second value is falsy, the class name wont be included.
+
+#### Examples
 
 ```js
 scn('hello', 'world'); // 'hello world'
@@ -17,18 +23,10 @@ scn('one', 'two', ['three', undefined]); // 'one two'
 ```
 
 ```js
-scn('one', 'two', ['three', null]); // 'one two'
+scn('one', undefined, 'two', false, '', null, ['three', false]); // 'one two'
 ```
 
-```js
-scn('one', 'two', ['three', '']); // 'one two three'
-```
-
-```js
-scn('one', undefined, 'two', null, ['three', '']); // 'one two three'
-```
-
-### Real world example
+#### Real world example
 ```js
 scn(
   'text-sm leading-4',
@@ -37,8 +35,28 @@ scn(
 ); // 'text-sm leading-4 text-success bg-success-opacity'
 ```
 
+### Style 2
+- Use strings for usual class names
+- Add logical operators for conditional classes
+
+#### Example
+
+```js
+scn('hello', false && 'world'); // 'hello'
+```
+#### Real world example
+```js
+scn(
+  'text-sm leading-4',
+  isError && 'text-error bg-error-opacity',
+  !isError && 'text-success bg-success-opacity'
+); // 'text-sm leading-4 text-success bg-success-opacity'
+```
+
 ### Example I love to mention
 ```ts
+import scn from "scn";
+
 interface IPropTypes {
   className?: string;
 }
