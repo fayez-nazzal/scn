@@ -1,6 +1,6 @@
 {
   "name": "scn",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Simple classnames utility function that is tiny and fast (90 bytes)",
   "main": "lib/index.js",
   "files": [
