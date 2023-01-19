@@ -4,14 +4,14 @@ Simple class names utility that is tiny and fast (75 bytes).
 
 ## Choose between 2 styles
 
-### Style 1
+### Style 1: Logical operators
 - Use strings for normal class names.
 - Add logical operators for conditional classes.
 
 #### Example
 
 ```js
-scn('hello', false && 'world'); // 'hello'
+scn('hello', null, false && 'world', undefined); // 'hello'
 ```
 #### Real world example
 ```js
@@ -22,7 +22,7 @@ scn(
 ); // 'text-sm leading-4 text-success bg-success-opacity'
 ```
 
-### Style 2
+### Style 2: Tuples
 - Use strings for normal class names.
 - Use tuples for conditional styles, if the second value is falsy, the class name will not be included.
 
@@ -41,7 +41,7 @@ scn('one', 'two', ['three', undefined]); // 'one two'
 ```
 
 ```js
-scn('one', undefined, 'two', false, '', null, ['three', false]); // 'one two'
+scn('one', undefined, 'two', false, null, ['three', false]); // 'one two'
 ```
 
 #### Real world example
