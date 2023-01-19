@@ -6,8 +6,8 @@
  * ### Output:
  * "text-sm text-success"
  */
-export = (...cn: ([string, any] | any)[]) =>
+export = (...cn: ([string, any] | (string | undefined | null | boolean))[]) =>
   cn
-    .filter((x) => x?.[1])
-    .map((x) => ((x as Array<any>).pop ? x[0] : x))
+    .filter((x) => (x as any)?.[1])
+    .map((x) => ((x as Array<any>).pop ? (x as Array<any>)[0] : x))
     .join(' ');
