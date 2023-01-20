@@ -2,13 +2,13 @@
   "name": "scn",
   "version": "1.0.16",
   "description": "Simple classnames utility function that is tiny and fast (75 bytes)",
-  "main": "lib/index.js",
+  "main": "lib/scn.js",
   "files": [
     "lib/**/*"
   ],
-  "types": "lib/index.d.ts",
+  "types": "lib/scn.d.ts",
   "scripts": {
-    "build": "tsc && google-closure-compiler --js=lib/index.js --js_output_file=lib/index.min.js && mv lib/index.min.js lib/index.js",
+    "build": "tsc && google-closure-compiler --js=lib/scn.js --js_output_file=lib/scn.min.js && mv lib/scn.min.js lib/scn.js",
     "test": "jest --config jestconfig.json"
   },
   "keywords": [
@@ -20,7 +20,16 @@
     "simple classnames",
     "class",
     "class names",
-    "class names"
+    "class names",
+    "tiny",
+    "fast",
+    "small",
+    "smaller",
+    "organize",
+    "organize class",
+    "organize classnames",
+    "clsx",
+    "classnames"
   ],
   "author": "Fayez Nazzal",
   "license": "MIT",
