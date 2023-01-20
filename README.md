@@ -1,6 +1,6 @@
-# scn
+# scn - Simple class names
 
-Simple class names utility that is tiny and fast (75 bytes).
+Simple class names utility that is the tiniest (75 bytes) and the fastest.
 
 ## Choose between 2 styles
 
@@ -69,6 +69,10 @@ const Component = ({ className }: IPropTypes) => (
 
 <Component /> // <div class="hello" />  -- No "undefined" class 🎉
 ```
+
+
+## Bundle Size comparison
+![image](https://user-images.githubusercontent.com/49946791/213785262-7a7a8cbb-b801-4eb7-af68-f58ed67fc196.png)
 
 ## License
 
