@@ -2,9 +2,11 @@
 
 Simple class names utility that is the tiniest (75 bytes) and the fastest.
 
-## Choose between 2 styles
+> Now you can write conditional class names more easily and without getting into trouble 😼.
 
-### Style 1: Logical operators
+## How to use?
+
+### Code Style 1: Logical operators
 - Use strings for normal class names.
 - Add logical operators for conditional classes.
 
@@ -22,7 +24,7 @@ scn(
 ); // 'text-sm leading-4 text-success bg-success-opacity'
 ```
 
-### Style 2: Tuples
+### Code Style 2: Tuples
 - Use strings for normal class names.
 - Use tuples for conditional styles, if the second value is falsy, the class name will not be included.
 
