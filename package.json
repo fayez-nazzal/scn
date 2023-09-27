@@ -1,14 +1,14 @@
 {
-  "name": "tw-cn",
+  "name": "tail-cn",
   "version": "1.0.19",
   "description": "Simple conditional TailwindCSS class utility with built in tailwind merge support, it's tiny, and fast!",
-  "main": "lib/tw-cn.js",
+  "main": "lib/tw.js",
   "files": [
     "lib/**/*"
   ],
-  "types": "lib/tw-cn.d.ts",
+  "types": "lib/tw.d.ts",
   "scripts": {
-    "build": "tsc && google-closure-compiler --js=lib/tw-cn.js --js_output_file=lib/tw-cn.min.js && mv lib/tw-cn.min.js lib/tw-cn.js",
+    "build": "tsc && google-closure-compiler --js=lib/tw.js --js_output_file=lib/tw.min.js && mv lib/tw.min.js lib/tw.js",
     "test": "jest --config jestconfig.json"
   },
   "keywords": [
@@ -36,8 +36,8 @@
   ],
   "author": "Fayez Nazzal",
   "license": "MIT",
-  "repository": "https://github.com/fayez-nazzal/tw-cn",
-  "bugs": "https://github.com/fayez-nazzal/tw-cn/issues",
+  "repository": "https://github.com/fayez-nazzal/tw",
+  "bugs": "https://github.com/fayez-nazzal/tw/issues",
   "devDependencies": {
     "@types/jest": "^29.2.5",
     "google-closure-compiler": "^20230802.0.0",

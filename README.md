@@ -1,4 +1,4 @@
-# tw
+# tail-cn
 
 Simple conditional TailwindCSS class utility with built in tailwind merge support, it's tiny, and fast!
 
@@ -18,7 +18,7 @@ Write conditional class names more easily and without getting into trouble, plus
 #### Example
 
 ```js
-  import { tw } from "tw-cn"
+  import { tw } from "tail-cn"
 
   tw('text-sm bg-white p-2', null, false && 'bg-black', undefined, 'p-3'); // 'text-sm bg-white p-3'
 ```

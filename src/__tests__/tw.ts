@@ -1,4 +1,4 @@
-import { tw } from '../tw-cn';
+import { tw } from '../tw';
 
 describe('tw', () => {
   it('returns the same - single string', () => {
